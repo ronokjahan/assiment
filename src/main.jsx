@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     },{
       path:'/chefs/:id',
       element:<Chefs></Chefs>,
-      loader:({params})=>fetch(`http://localhost:3000/chef/${params.id}`)
+      loader:({params})=>fetch(`https://assiment10-server-j8u1.vercel.app/chef/${params.id}`)
       
     }
   ]
