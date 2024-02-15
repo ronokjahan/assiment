@@ -7,6 +7,7 @@ import Goglegithub from './Googlegithub/Goglegithub';
 
 const Regstion = () => {
 
+
 const {createUser}=useContext(Authcontex)
 console.log(createUser);
 
@@ -50,7 +51,7 @@ createUser(email,password)
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
             <Form.Control type="password" name='password' placeholder="Password" required />
-            <p>{error}</p>
+            <p className='text-red-600'>{error}</p>
           </Form.Group>
           
           <Form.Group controlId="formPhotoUrl">
@@ -68,6 +69,7 @@ createUser(email,password)
           
         </Form>
         <p>Already have an account?<Link to='/login'>Login</Link></p>
+        
 
      <Goglegithub></Goglegithub>
       </Container>

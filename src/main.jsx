@@ -18,10 +18,12 @@ import Authprovider from './Componante/Home/Authprovider.jsx';
 import Chef from './Componante/Chef.jsx';
 import Chefdeatils from './Componante/Chefdeatils.jsx';
 import Chefs from './Chefs.jsx';
+import Homemain from './Componante/Homemain.jsx';
+import ErroPage from './Componante/Home/ErroPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Mains></Mains>,
+    element: <Homemain></Homemain>,
     children:[{
       path:'/',
       element:<Home></Home>
@@ -36,6 +38,9 @@ const router = createBrowserRouter([
       element:<Chefs></Chefs>,
       loader:({params})=>fetch(`https://assiment10-server-j8u1.vercel.app/chef/${params.id}`)
       
+    },{
+    path:'*',
+    element:<ErroPage></ErroPage>
     }
   ]
   },

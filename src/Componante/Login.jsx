@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Authcontex } from './Home/Authprovider';
+import Goglegithub from './Googlegithub/Goglegithub';
 
 const Login = () => {
   const {signIn}=useContext(Authcontex)
@@ -42,11 +43,14 @@ const Login = () => {
             <Form.Control type="password" name='password' placeholder="Password" required />
           </Form.Group>
   
-          <Button variant="primary" type="submit">
+        <div className='items-center'>
+        <Button className=' mt-4' variant="primary" type="submit">
             Login
           </Button>
+        </div>
         </Form>
         <p>Don.t have a account?<Link to='/regstion'>Regstion</Link></p>
+        <Goglegithub></Goglegithub>
       </Container>
     );
 };

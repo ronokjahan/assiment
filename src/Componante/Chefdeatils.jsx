@@ -9,7 +9,7 @@ const Chefdeatils = ({chefs}) => {
    
     return (
      
-           <Card  className='container text-center col-3 ' style={{ width: '20rem' }}>
+           <Card  className='container text-center col-2 ' style={{ width: '20rem' }}>
       <Card.Img variant="top" src={chef_picture} />
       <Card.Body>
         <Card.Title>{chef_name}</Card.Title>

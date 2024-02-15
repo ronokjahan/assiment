@@ -14,6 +14,7 @@ const Allchefs = ({all}) => {
            <h4> Likes: {number_of_recipes}</h4>
             <h5> Year:{years_of_experience}</h5>
            </div>
+           <button className="btn btn-active  btn-primary w-full     "> Favorite Now</button>
             </div>
          
         </div>

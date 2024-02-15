@@ -17,15 +17,17 @@ const Chef = () => {
         
     },[])
     return (
-        <div>
-            <h1>chef{chefs.length}</h1>,
-            {
+        <div className=''>
+           
+          <div className='md:grid grid-cols-4 gap-3'>
+          {
                 chefs.map(c=><Chefdeatils 
                 chefs={c}
                 
                 ></Chefdeatils>)
             }
             
+          </div>
           
         
         </div>
